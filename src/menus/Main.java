@@ -92,28 +92,106 @@ public class Main {
         static void cargarDatosIniciales() {
 
             // Productos de ejemplo
-            agregarProductoInicial(101, "Sets y Conjuntos", "Dulce Comienzo",
-                    "Bodys y mamelucos para crear looks dulces y cómodos", 58);
+            agregarProductoInicial(101, "Conjunto overol + blusa niña", "Dulce Comienzo",
+                    "Sets y conjuntos para crear looks dulces y cómodos.", 65.000,38);
 
-            agregarProductoInicial(102, "Pijamas", "Estrellitas Baby",
-                    "Prendas para acompañar los momentos de descanso", 45);
+            agregarProductoInicial(102, "Conjunto buzo + pantalón bebé unisex", "Dulce Comienzo",
+                    "Sets y conjuntos para crear looks dulces y cómodos.", 58.000,55);
 
-            agregarProductoInicial(103, "Ropa Casual", "Pequeños Exploradores",
-                    "Ropa para jugar y descubrir el mundo", 112);
+            agregarProductoInicial(103, "Conjunto body + vestido algodón bebé niña", "Dulce Comienzo",
+                    "Sets y conjuntos para crear looks dulces y cómodos.", 69.900,32);
 
-            agregarProductoInicial(104, "Accesorios infantiles", "Pequeños Tesoros",
-                    "Pequeños complementos para darle un toque especial a cada look", 42);
+            agregarProductoInicial(104, "Conjunto camiseta + bermuda Bluey niño", "Dulce Comienzo",
+                    "Sets y conjuntos para crear looks dulces y cómodos.", 80.000,18);
 
-            agregarProductoInicial(105, "Prendas de temporada de verano", "Dulce Verano",
-                    "Ideas para renovar el armario de los pequeños en los días más calurosos.", 39);
+            agregarProductoInicial(105, "Conjunto + peluche de apego bebé unisex", "Dulce Comienzo",
+                    "Sets y conjuntos para crear looks dulces y cómodos.", 86.900,49);
 
-            agregarProductoInicial(106, "Detalles para regalar", "Regalos con Amoro",
-                    "Ideas para sorprender a los bebés y sus familias", 30);
+            agregarProductoInicial(106, "Pijama algodón cierre doble sentido estampada bebé niña", "Estrellitas Baby",
+                    "Prendas para acompañar los momentos de descanso.", 52.000,30);
+
+            agregarProductoInicial(107, "Pijama algodón cierre doble sentido estampada bebé niño", "Estrellitas Baby",
+                    "Prendas para acompañar los momentos de descanso.", 52.000,30);
+
+            agregarProductoInicial(108, "Pijama algodón botones a presión x2unds surtida bebé unisex", "Estrellitas Baby",
+                    "Prendas para acompañar los momentos de descanso.", 78.990,56);
+
+            agregarProductoInicial(109, "Pijama buzo + pantalón algodón niña", "Estrellitas Baby",
+                    "Prendas para acompañar los momentos de descanso.", 64.000,33);
+
+            agregarProductoInicial(110, "Pijama buzo + pantalón algodón niño", "Estrellitas Baby",
+                    "Prendas para acompañar los momentos de descanso.", 64.000,33);
+
+            agregarProductoInicial(111, "Overol largo aplique bordado algodón café bebé niño", "Pequeños Exploradores",
+                    "Ropa para jugar y descubrir el mundo.", 70.800,41);
+
+            agregarProductoInicial(112, "Overol jardinera algodón índigo bebé niña", "Pequeños Exploradores",
+                    "Ropa para jugar y descubrir el mundo.", 63.800,42);
+
+            agregarProductoInicial(113, "Camiseta regular algodón x2unds surtida bebé niña", "Pequeños Exploradores",
+                    "Ropa para jugar y descubrir el mundo.", 69.990,35);
+
+            agregarProductoInicial(114, "Camiseta regular x2unds surtida bebé niño", "Pequeños Exploradores",
+                    "Ropa para jugar y descubrir el mundo.", 69.990,35);
+
+            agregarProductoInicial(115, "Polo oversize beige niño", "Pequeños Exploradores",
+                    "Ropa para jugar y descubrir el mundo.", 54.990,30);
+
+            agregarProductoInicial(116, "Vestido midi índigo claro niña", "Pequeños Exploradores",
+                    "Ropa para jugar y descubrir el mundo.", 66.990,32);
+
+            agregarProductoInicial(117, "Camibuso regular protección UV estampado niño", "Dulce Verano",
+                    "Ideas para renovar el armario de los pequeños en los días más calurosos.", 48.6000,38);
+
+            agregarProductoInicial(118, "Vestido de baño manga larga protección UV estampado niña", "Dulce Verano",
+                    "Ideas para renovar el armario de los pequeños en los días más calurosos.", 70.990,39);
+
+            agregarProductoInicial(119, "Vestido de baño 3 piezas protección UV estampado niña", "Dulce Verano",
+                    "Ideas para renovar el armario de los pequeños en los días más calurosos.", 85.990,42);
+
+            agregarProductoInicial(120, "Vestido de baño manga larga protección UV estampado bebé niña", "Dulce Verano",
+                    "Ideas para renovar el armario de los pequeños en los días más calurosos.", 92.990,44);
+
+            agregarProductoInicial(121, "Traje de baño protección UV 2 piezas estampado bebé niño", "Dulce Verano",
+                    "Ideas para renovar el armario de los pequeños en los días más calurosos.", 94.990,45);
+
+            agregarProductoInicial(122, "Gorro bebé unisex algodón x2unds surtido", "Pequeños Tesoros",
+                    "Pequeños complementos para darle un toque especial a cada look.", 39.990,53);
+
+            agregarProductoInicial(123, "Tenis casuales blanco niño", "Pequeños Tesoros",
+                    "Pequeños complementos para darle un toque especial a cada look.", 70.000,30);
+
+            agregarProductoInicial(124, "Medias con balaca bebé niña", "Pequeños Tesoros",
+                    "Pequeños complementos para darle un toque especial a cada look.", 28.000,30);
+
+            agregarProductoInicial(125, "Gorro bebé unisex lana x2unds surtido", "Pequeños Tesoros",
+                    "Pequeños complementos para darle un toque especial a cada look.", 27.990,54);
+
+            agregarProductoInicial(126, "Tenis New Balance niña y niño", "Pequeños Tesoros",
+                    "Pequeños complementos para darle un toque especial a cada look.", 65.000,48);
+
+            agregarProductoInicial(127, "Set de gafas y moños niña", "Pequeños Tesoros",
+                    "Pequeños complementos para darle un toque especial a cada look.", 16.000,30);
+
+            agregarProductoInicial(128, "Set recién nacido algodón bebé niña personalizado", "Regalos con Amor",
+                    "Ideas para sorprender a los bebés y sus familias.", 170.990,60);
+
+            agregarProductoInicial(129, "Set recién nacido algodón bebé niño personalizado", "Regalos con Amor",
+                    "Ideas para sorprender a los bebés y sus familias.", 170.990,60);
+
+            agregarProductoInicial(130, "Chaqueta textura peluche blanco bebé unisex", "Regalos con Amor",
+                    "Ideas para sorprender a los bebés y sus familias.", 79.000,112);
+
+            agregarProductoInicial(131, "Peluche de apego conejo", "Regalos con Amor",
+                    "Ideas para sorprender a los bebés y sus familias.", 49.000,96);
+
+            agregarProductoInicial(132, "Cobija para bebé + peluche de oso", "Regalos con Amor",
+                    "Ideas para sorprender a los bebés y sus familias.", 82.000,79);
 
             // Servicio de ejemplo
             codServicios[0] = 201;
             nomServicios[0] = "Empaque de regalo";
-            descServicios[0] = "Empaque especial para regalo";
+            descServicios[0] = "Empaque especial personalizado para regalo";
             precioServicios[0] = 25000;
             totalServicios = 1;
 
@@ -121,12 +199,13 @@ public class Main {
 
         static void agregarProductoInicial(int codigo, String nombre,
                                            String categoria, String descripcion,
-                                           int stock) {
+                                           double precio, int stock) {
 
             codProductos[totalProductos] = codigo;
             nomProductos[totalProductos] = nombre;
             catProductos[totalProductos] = categoria;
             descProductos[totalProductos] = descripcion;
+            precioProductos[totalProductos] = precio;
             stockProductos[totalProductos] = stock;
             totalProductos++;
         }
@@ -1072,7 +1151,7 @@ public class Main {
                         break;
 
                     case 3:
-                        listarProductos();
+                        menuCategorias();
                         break;
 
                     case 4:
