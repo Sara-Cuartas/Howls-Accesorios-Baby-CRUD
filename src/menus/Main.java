@@ -25,8 +25,8 @@ public class Main {
         static int[] codProductos = new int[MAX];
         static String[] nomProductos = new String[MAX];
         static String[] catProductos = new String[MAX];
-        static String[] descProductos = new String[MAX];
         static double[] precioProductos = new double[MAX];
+        static String[] descProductos = new String[MAX];
         static int[] stockProductos = new int[MAX];
         static int totalProductos = 0;
 
@@ -55,13 +55,13 @@ public class Main {
 
             do {
                 System.out.println("\n********************************");
-                System.out.println(" HOWLS ACCESORIOS BABY");
-                System.out.println(" Sistema de Administracion de Tienda");
+                System.out.println(" HOWL'S ACCESORIOS BABY");
+                System.out.println(" Sistema de Administración de Tienda");
                 System.out.println("**********************************");
                 System.out.println("1. Ingresar como administrador");
                 System.out.println("2. Ingresar como cliente");
                 System.out.println("3. Salir");
-                System.out.print("Seleccione una opcion: ");
+                System.out.print("Seleccione una opción: ");
 
                 opcion = leerEntero();
 
@@ -79,7 +79,7 @@ public class Main {
                         break;
 
                     default:
-                        System.out.println("Opcion no valida.");
+                        System.out.println("Opción no valida.");
                 }
 
             } while (opcion != 3);
@@ -93,41 +93,40 @@ public class Main {
 
             // Productos de ejemplo
             agregarProductoInicial(101, "Sets y Conjuntos", "Dulce Comienzo",
-                    "Bodys y mamelucos para crear looks dulces y cómodos", 58000, 20);
+                    "Bodys y mamelucos para crear looks dulces y cómodos", 58);
 
             agregarProductoInicial(102, "Pijamas", "Estrellitas Baby",
-                    "Prendas para acompañar los momentos de descanso", 42000, 10);
+                    "Prendas para acompañar los momentos de descanso", 45);
 
             agregarProductoInicial(103, "Ropa Casual", "Pequeños Exploradores",
-                    "Ropa para jugar y descubrir el mundo", 75000, 15);
+                    "Ropa para jugar y descubrir el mundo", 112);
 
             agregarProductoInicial(104, "Accesorios infantiles", "Pequeños Tesoros",
-                    "Pequeños complementos para darle un toque especial a cada look", 28000, 25);
+                    "Pequeños complementos para darle un toque especial a cada look", 42);
 
             agregarProductoInicial(105, "Prendas de temporada de verano", "Dulce Verano",
-                    "Ideas para renovar el armario de los pequeños en los días más calurosos.", 65000, 16);
+                    "Ideas para renovar el armario de los pequeños en los días más calurosos.", 39);
 
             agregarProductoInicial(106, "Detalles para regalar", "Regalos con Amoro",
-                    "Ideas para sorprender a los bebés y sus familias", 98000, 28);
+                    "Ideas para sorprender a los bebés y sus familias", 30);
 
             // Servicio de ejemplo
             codServicios[0] = 201;
             nomServicios[0] = "Empaque de regalo";
             descServicios[0] = "Empaque especial para regalo";
-            precioServicios[0] = 5000;
+            precioServicios[0] = 25000;
             totalServicios = 1;
 
         }
 
         static void agregarProductoInicial(int codigo, String nombre,
                                            String categoria, String descripcion,
-                                           double precio, int stock) {
+                                           int stock) {
 
             codProductos[totalProductos] = codigo;
             nomProductos[totalProductos] = nombre;
             catProductos[totalProductos] = categoria;
             descProductos[totalProductos] = descripcion;
-            precioProductos[totalProductos] = precio;
             stockProductos[totalProductos] = stock;
             totalProductos++;
         }
@@ -140,11 +139,11 @@ public class Main {
             System.out.print("Usuario administrador: ");
             String usuario = sc.nextLine();
 
-            System.out.print("Contrasena: ");
+            System.out.print("Contraseña: ");
             String clave = sc.nextLine();
 
             if (usuario.equals("admin") && clave.equals("admin123")) {
-                System.out.println("Inicio de sesion exitoso.");
+                System.out.println("Inicio de sesión exitoso.");
                 menuAdministrador();
             } else {
                 System.out.println("Usuario o contraseña incorrectos.");
@@ -158,14 +157,14 @@ public class Main {
             int opcion;
 
             do {
-                System.out.println("\n========== MENU ADMINISTRADOR ==========");
+                System.out.println("\n---------- MENÚ ADMINISTRADOR ----------");
                 System.out.println("1. Administrar usuarios");
                 System.out.println("2. Administrar productos");
                 System.out.println("3. Administrar servicios");
                 System.out.println("4. Consultar ventas y facturas");
                 System.out.println("5. Informes");
-                System.out.println("6. Cerrar sesion");
-                System.out.print("Seleccione una opcion: ");
+                System.out.println("6. Cerrar sesión");
+                System.out.print("Seleccione una opción: ");
 
                 opcion = leerEntero();
 
@@ -191,11 +190,11 @@ public class Main {
                         break;
 
                     case 6:
-                        System.out.println("Sesion de administrador cerrada.");
+                        System.out.println("Sesión de administrador cerrada.");
                         break;
 
                     default:
-                        System.out.println("Opcion no valida.");
+                        System.out.println("Opción no válida.");
                 }
 
             } while (opcion != 6);
@@ -209,13 +208,13 @@ public class Main {
             int opcion;
 
             do {
-                System.out.println("\n========== ADMINISTRAR USUARIOS ==========");
+                System.out.println("\n---------- ADMINISTRAR USUARIOS ----------");
                 System.out.println("1. Registrar usuario");
                 System.out.println("2. Listar usuarios");
                 System.out.println("3. Modificar usuario");
                 System.out.println("4. Eliminar usuario");
                 System.out.println("5. Regresar");
-                System.out.print("Seleccione una opcion: ");
+                System.out.print("Seleccione una opción: ");
 
                 opcion = leerEntero();
 
@@ -240,7 +239,7 @@ public class Main {
                         break;
 
                     default:
-                        System.out.println("Opcion no valida.");
+                        System.out.println("Opción no válida.");
                 }
 
             } while (opcion != 5);
@@ -250,11 +249,11 @@ public class Main {
     static void registrarUsuario() {
 
         if (totalUsuarios >= MAX) {
-            System.out.println("No hay espacio para mas usuarios.");
+            System.out.println("No hay espacio para más usuarios.");
             return;
         }
 
-        System.out.println("\n========== REGISTRO DE USUARIO ==========");
+        System.out.println("\n---------- REGISTRO DE USUARIO ----------");
 
         System.out.print("Nombres: ");
         String nombre = sc.nextLine().trim();
@@ -262,13 +261,13 @@ public class Main {
         System.out.print("Apellidos: ");
         String apellido = sc.nextLine().trim();
 
-        System.out.print("Numero de documento: ");
+        System.out.print("Número de documento: ");
         String documento = sc.nextLine().trim();
 
-        System.out.print("Telefono: ");
+        System.out.print("Teléfono: ");
         String telefono = sc.nextLine().trim();
 
-        System.out.print("Correo electronico: ");
+        System.out.print("Correo electrónico: ");
         String correo = sc.nextLine().trim();
 
         System.out.print("Crea un nombre de usuario: ");
@@ -288,7 +287,7 @@ public class Main {
             }
         }
 
-        System.out.print("Crea una contrasena: ");
+        System.out.print("Crea una contraseña: ");
         String clave = sc.nextLine();
 
         if (nombre.isEmpty() || apellido.isEmpty()
@@ -332,7 +331,7 @@ public class Main {
 
     static void listarUsuarios() {
 
-            System.out.println("\n========== LISTA DE USUARIOS ==========");
+            System.out.println("\n---------- LISTA DE USUARIOS ----------");
 
              if (totalUsuarios == 0) {
              System.out.println("No hay usuarios registrados.");
@@ -343,7 +342,7 @@ public class Main {
                 System.out.println("Nombres: " + nombres[i]);
                 System.out.println("Apellidos: " + apellidos[i]);
                 System.out.println("Documento: " + documentos[i]);
-                System.out.println("Telefono: " + telefonos[i]);
+                System.out.println("Teléfono: " + telefonos[i]);
                 System.out.println("Correo: " + correos[i]);
                 System.out.println("Usuario: " + nombresUsuario[i]);
             }
@@ -434,7 +433,7 @@ public class Main {
             System.out.println("4. Eliminar producto");
             System.out.println("5. Ver productos por categoría");
             System.out.println("6. Regresar");
-            System.out.print("Seleccione una opcion: ");
+            System.out.print("Seleccione una opción: ");
 
             opcion = leerEntero();
 
@@ -583,11 +582,11 @@ public class Main {
         System.out.println("Precio: $63.800");
         System.out.println("Tallas: 0/3 3/6 6/9 9/12 12/18 18/24 meses");
 
-        System.out.println("\nProducto: Camiseta regular algodon x2unds surtida bebe niña");
+        System.out.println("\nProducto: Camiseta regular algodón x2unds surtida bebé niña");
         System.out.println("Precio: $69.990");
         System.out.println("Tallas: 0/3 3/6 6/9 9/12 12/18 18/24 meses");
 
-        System.out.println("\nProducto: Camiseta regular x2unds surtida bebe niño");
+        System.out.println("\nProducto: Camiseta regular x2unds surtida bebé niño");
         System.out.println("Precio: $69.990");
         System.out.println("Tallas: 0/3 3/6 6/9 9/12 12/18 18/24 meses");
 
@@ -604,23 +603,23 @@ public class Main {
 
         System.out.println("\n---------- DULCE VERANO ----------");
 
-        System.out.println("\nProducto: Camibuso regular proteccion UV estampado niño");
+        System.out.println("\nProducto: Camibuso regular protección UV estampado niño");
         System.out.println("Precio: $48.600");
         System.out.println("Tallas: 18/24M 2T 3T 4T 5T 6T");
 
-        System.out.println("\nProducto: Vestido de baño manga larga proteccion UV estampado niña");
+        System.out.println("\nProducto: Vestido de baño manga larga protección UV estampado niña");
         System.out.println("Precio: $70.990");
         System.out.println("Tallas: 12/18M 18/24M 2T 3T 4T 5T 6T");
 
-        System.out.println("\nProducto: Vestido de baño 3 piezas proteccion UV estampado niña");
+        System.out.println("\nProducto: Vestido de baño 3 piezas protección UV estampado niña");
         System.out.println("Precio: $85.990");
         System.out.println("Tallas: 12/18M 18/24M 2T 3T 4T 5T 6T");
 
-        System.out.println("\nProducto: Vestido de baño manga larga proteccion UV estampado bebe niña");
+        System.out.println("\nProducto: Vestido de baño manga larga protección UV estampado bebé niña");
         System.out.println("Precio: $92.990");
         System.out.println("Tallas: 6/9 9/12 12/18 18/24 meses");
 
-        System.out.println("\nProducto: Traje de baño proteccion UV 2 piezas estampado bebe niño");
+        System.out.println("\nProducto: Traje de baño protección UV 2 piezas estampado bebé niño");
         System.out.println("Precio: $94.990");
         System.out.println("Tallas: 6/9 9/12 12/18 18/24 meses");
     }
@@ -629,7 +628,7 @@ public class Main {
 
         System.out.println("\n---------- PEQUEÑOS TESOROS ----------");
 
-        System.out.println("\nProducto: Gorro bebe unisex algodon x2unds surtido");
+        System.out.println("\nProducto: Gorro bebé unisex algodón x2unds surtido");
         System.out.println("Precio: $39.990");
         System.out.println("Tallas: 0/0 0/3 3/6 6/9 meses");
 
@@ -637,11 +636,11 @@ public class Main {
         System.out.println("Precio: $70.000");
         System.out.println("Tallas: 19/20/21/22/23/24/25/26");
 
-        System.out.println("\nProducto: Medias con balaca bebe niña");
+        System.out.println("\nProducto: Medias con balaca bebé niña");
         System.out.println("Precio: $28.000");
         System.out.println("Tallas: 0/12 meses");
 
-        System.out.println("\nProducto: Gorro bebe unisex lana x2unds surtido");
+        System.out.println("\nProducto: Gorro bebé unisex lana x2unds surtido");
         System.out.println("Precio: $27.990");
         System.out.println("Tallas: 0/0 0/3 3/6 6/9 meses");
 
@@ -658,45 +657,45 @@ public class Main {
 
         System.out.println("\n---------- REGALOS CON AMOR ----------");
 
-        System.out.println("\nProducto: Set recien nacido algodon bebe niña personalizado");
+        System.out.println("\nProducto: Set recién nacido algodón bebe niña personalizado");
         System.out.println("Precio: $170.990");
         System.out.println("Tallas: 0/0 0/3 meses");
 
-        System.out.println("\nProducto: Set recien nacido algodon bebe niño personalizado");
+        System.out.println("\nProducto: Set recién nacido algodón bebe niño personalizado");
         System.out.println("Precio: $170.990");
         System.out.println("Tallas: 0/0 0/3 meses");
 
-        System.out.println("\nProducto: Chaqueta textura peluche blanco bebe unisex");
+        System.out.println("\nProducto: Chaqueta textura peluche blanco bebé unisex");
         System.out.println("Precio: $79.000");
         System.out.println("Tallas: 0/0 0/3 3/6 6/9 9/12 meses");
 
         System.out.println("\nProducto: Peluche de apego conejo");
         System.out.println("Precio: $49.000");
 
-        System.out.println("\nProducto: Cobija para bebe + peluche de oso");
+        System.out.println("\nProducto: Cobija para bebé + peluche de oso");
         System.out.println("Precio: $82.000");
-        System.out.println("Talla: Unica");
+        System.out.println("Talla: Única");
     }
 
         static void registrarProducto() {
 
             if (totalProductos >= MAX) {
-                System.out.println("No hay espacio para mas productos.");
+                System.out.println("No hay espacio para más productos.");
                 return;
             }
 
-            System.out.print("Codigo del producto: ");
+            System.out.print("Código del producto: ");
             int codigo = leerEntero();
 
             if (buscarProducto(codigo) != -1) {
-                System.out.println("Ese codigo ya existe.");
+                System.out.println("Ese código ya existe.");
                 return;
             }
 
             System.out.print("Nombre: ");
             String nombre = sc.nextLine();
 
-            System.out.print("Categoria: ");
+            System.out.print("Categoría: ");
             String categoria = sc.nextLine();
 
             System.out.print("Descripción: ");
@@ -732,7 +731,7 @@ public class Main {
 
         static void listarProductos() {
 
-            System.out.println("\n========== INVENTARIO DE PRODUCTOS ==========");
+            System.out.println("\n---------- INVENTARIO DE PRODUCTOS ----------");
 
             if (totalProductos == 0) {
                 System.out.println("No hay productos registrados.");
@@ -741,7 +740,7 @@ public class Main {
                     System.out.println("--------------------------------");
                     System.out.println("Código: " + codProductos[i]);
                     System.out.println("Nombre: " + nomProductos[i]);
-                    System.out.println("Categoria: " + catProductos[i]);
+                    System.out.println("Categoría: " + catProductos[i]);
                     System.out.println("Descripción: " + descProductos[i]);
                     System.out.println("Precio: $" + precioProductos[i]);
                     System.out.println("Stock: " + stockProductos[i]);
@@ -751,7 +750,7 @@ public class Main {
 
         static void modificarProducto() {
 
-            System.out.print("Codigo del producto que desea modificar: ");
+            System.out.print("Código del producto que desea modificar: ");
             int codigo = leerEntero();
 
             int pos = buscarProducto(codigo);
@@ -762,17 +761,17 @@ public class Main {
                 System.out.print("Nuevo nombre: ");
                 nomProductos[pos] = sc.nextLine();
 
-                System.out.print("Nueva categoria: ");
+                System.out.print("Nueva categoría: ");
                 catProductos[pos] = sc.nextLine();
 
-                System.out.print("Nueva descripcion: ");
+                System.out.print("Nueva descripción: ");
                 descProductos[pos] = sc.nextLine();
 
                 System.out.print("Nuevo precio: ");
                 double precio = leerDouble();
 
                 if (precio < 0) {
-                    System.out.println("Precio invalido. Se conserva el anterior.");
+                    System.out.println("Precio inválido. Se conserva el anterior.");
                 } else {
                     precioProductos[pos] = precio;
                 }
@@ -781,18 +780,18 @@ public class Main {
                 int stock = leerEntero();
 
                 if (stock < 0) {
-                    System.out.println("Stock invalido. Se conserva el anterior.");
+                    System.out.println("Stock inválido. Se conserva el anterior.");
                 } else {
                     stockProductos[pos] = stock;
                 }
 
-                System.out.println("Proceso de modificacion finalizado.");
+                System.out.println("Proceso de modificación finalizado.");
             }
         }
 
         static void eliminarProducto() {
 
-            System.out.print("Codigo del producto que desea eliminar: ");
+            System.out.print("Código del producto que desea eliminar: ");
             int codigo = leerEntero();
 
             int pos = buscarProducto(codigo);
@@ -832,13 +831,13 @@ public class Main {
             int opcion;
 
             do {
-                System.out.println("\n========== ADMINISTRAR SERVICIOS ==========");
+                System.out.println("\n----------ADMINISTRAR SERVICIOS ----------");
                 System.out.println("1. Registrar servicio");
                 System.out.println("2. Listar servicios");
                 System.out.println("3. Modificar servicio");
                 System.out.println("4. Eliminar servicio");
                 System.out.println("5. Regresar");
-                System.out.print("Seleccione una opcion: ");
+                System.out.print("Seleccione una opción: ");
 
                 opcion = leerEntero();
 
@@ -863,7 +862,7 @@ public class Main {
                         break;
 
                     default:
-                        System.out.println("Opcion no valida.");
+                        System.out.println("Opción no válida.");
                 }
 
             } while (opcion != 5);
@@ -872,7 +871,7 @@ public class Main {
         static void registrarServicio() {
 
             if (totalServicios >= MAX) {
-                System.out.println("No hay espacio para mas servicios.");
+                System.out.println("No hay espacio para más servicios.");
                 return;
             }
 
@@ -880,7 +879,7 @@ public class Main {
             int codigo = leerEntero();
 
             if (buscarServicio(codigo) != -1) {
-                System.out.println("Ese codigo ya existe.");
+                System.out.println("Ese código ya existe.");
                 return;
             }
 
@@ -910,16 +909,16 @@ public class Main {
 
         static void listarServicios() {
 
-            System.out.println("\n========== LISTA DE SERVICIOS ==========");
+            System.out.println("\n---------- LISTA DE SERVICIOS ----------");
 
             if (totalServicios == 0) {
                 System.out.println("No hay servicios registrados.");
             } else {
                 for (int i = 0; i < totalServicios; i++) {
                     System.out.println("--------------------------------");
-                    System.out.println("Codigo: " + codServicios[i]);
+                    System.out.println("Código: " + codServicios[i]);
                     System.out.println("Nombre: " + nomServicios[i]);
-                    System.out.println("Descripcion: " + descServicios[i]);
+                    System.out.println("Descripción: " + descServicios[i]);
                     System.out.println("Precio: $" + precioServicios[i]);
                 }
             }
@@ -927,7 +926,7 @@ public class Main {
 
         static void modificarServicio() {
 
-            System.out.print("Codigo del servicio que desea modificar: ");
+            System.out.print("Código del servicio que desea modificar: ");
             int codigo = leerEntero();
 
             int pos = buscarServicio(codigo);
@@ -938,7 +937,7 @@ public class Main {
                 System.out.print("Nuevo nombre: ");
                 nomServicios[pos] = sc.nextLine();
 
-                System.out.print("Nueva descripcion: ");
+                System.out.print("Nueva descripción: ");
                 descServicios[pos] = sc.nextLine();
 
                 System.out.print("Nuevo precio: ");
@@ -955,7 +954,7 @@ public class Main {
 
         static void eliminarServicio() {
 
-            System.out.print("Codigo del servicio que desea eliminar: ");
+            System.out.print("Código del servicio que desea eliminar: ");
             int codigo = leerEntero();
 
             int pos = buscarServicio(codigo);
@@ -993,11 +992,11 @@ public class Main {
             int opcion;
 
             do {
-                System.out.println("\n========== MENÚ DE CLIENTES ==========");
+                System.out.println("\n---------- MENÚ DE CLIENTES ----------");
                 System.out.println("1. Registrarse");
-                System.out.println("2. Iniciar sesion");
+                System.out.println("2. Iniciar sesión");
                 System.out.println("3. Regresar");
-                System.out.print("Seleccione una opcion: ");
+                System.out.print("Seleccione una opción: ");
 
                 opcion = leerEntero();
 
@@ -1014,7 +1013,7 @@ public class Main {
                         break;
 
                     default:
-                        System.out.println("Opcion no valida.");
+                        System.out.println("Opción no válida.");
                 }
 
             } while (opcion != 3);
@@ -1039,7 +1038,7 @@ public class Main {
             System.out.println("Bienvenido/a " + nombres[pos] + ".");
             menuCliente(idUsuarios[pos]);
          } else {
-            System.out.println("Contrasena incorrecta.");
+            System.out.println("Contraseña incorrecta.");
         }
     }
 
@@ -1051,15 +1050,15 @@ public class Main {
             int opcion;
 
             do {
-                System.out.println("\n-------- MENU DEL CLIENTE --------");
+                System.out.println("\n-------- MENÚ DEL CLIENTE --------");
                 System.out.println("1. Ver mis datos");
                 System.out.println("2. Modificar mis datos");
                 System.out.println("3. Ver productos disponibles");
                 System.out.println("4. Comprar producto");
                 System.out.println("5. Consultar una factura");
                 System.out.println("6. Ver mi historial de compras");
-                System.out.println("7. Cerrar sesion");
-                System.out.print("Seleccione una opcion: ");
+                System.out.println("7. Cerrar sesión");
+                System.out.print("Seleccione una opción: ");
 
                 opcion = leerEntero();
 
@@ -1089,11 +1088,11 @@ public class Main {
                         break;
 
                     case 7:
-                        System.out.println("Sesion cerrada.");
+                        System.out.println("Sesión cerrada.");
                         break;
 
                     default:
-                        System.out.println("Opcion no valida.");
+                        System.out.println("Opción no valida.");
                 }
 
             } while (opcion != 7);
@@ -1113,7 +1112,7 @@ public class Main {
             System.out.println("Teléfono: " + telefonos[pos]);
             System.out.println("Correo: " + correos[pos]);
             System.out.println("Nombre de usuario: " + nombresUsuario[pos]);
-            System.out.println("Contrasena: ********");
+            System.out.println("Contraseña: ********");
         } else {
             System.out.println("Usuario no encontrado.");
         }
@@ -1182,14 +1181,14 @@ public class Main {
                 break;
 
             case 6:
-                System.out.print("Nueva contrasena: ");
+                System.out.print("Nueva contraseña: ");
                 String nuevaClave = sc.nextLine();
 
                 if (nuevaClave.isEmpty()) {
-                    System.out.println("La contrasena no puede estar vacia.");
+                    System.out.println("La contraseña no puede estar vacía.");
                 } else {
                     claves[pos] = nuevaClave;
-                    System.out.println("Contrasena actualizada.");
+                    System.out.println("Contraseña actualizada.");
                 }
                 break;
 
@@ -1197,7 +1196,7 @@ public class Main {
                 break;
 
             default:
-                System.out.println("Opcion no valida.");
+                System.out.println("Opción no valida.");
         }
     }
 
@@ -1207,13 +1206,13 @@ public class Main {
         static void comprarProducto(int idCliente) {
 
             if (totalVentas >= MAX) {
-                System.out.println("No se pueden registrar mas ventas.");
+                System.out.println("No se pueden registrar más ventas.");
                 return;
             }
 
             listarProductos();
 
-            System.out.print("\nIngrese el codigo del producto que desea comprar: ");
+            System.out.print("\nIngrese el código del producto que desea comprar: ");
             int codigo = leerEntero();
 
             int pos = buscarProducto(codigo);
@@ -1266,21 +1265,21 @@ public class Main {
             } else {
                 int posProducto = buscarProducto(productoFactura[pos]);
 
-                System.out.println("\n========== FACTURA HOWLS ACCESORIOS BABY ==========");
-                System.out.println("Numero de factura: " + numFacturas[pos]);
+                System.out.println("\n---------- FACTURA HOWLS ACCESORIOS BABY ----------");
+                System.out.println("Número de factura: " + numFacturas[pos]);
                 System.out.println("ID del cliente: " + clienteFactura[pos]);
 
                 if (posProducto != -1) {
                     System.out.println("Producto: " + nomProductos[posProducto]);
                     System.out.println("Precio unitario: $" + precioProductos[posProducto]);
                 } else {
-                    System.out.println("Codigo del producto: " + productoFactura[pos]);
+                    System.out.println("Código del producto: " + productoFactura[pos]);
                     System.out.println("El producto ya no esta en el inventario.");
                 }
 
                 System.out.println("Cantidad: " + cantidadFactura[pos]);
                 System.out.println("TOTAL: $" + totalFactura[pos]);
-                System.out.println("===================================================");
+                System.out.println("----------------------------------------");
             }
         }
 
@@ -1297,7 +1296,7 @@ public class Main {
 
         static void consultarFacturaCliente(int idCliente) {
 
-            System.out.print("Ingrese el numero de factura: ");
+            System.out.print("Ingrese el número de factura: ");
             int numero = leerEntero();
 
             int pos = buscarFactura(numero);
@@ -1315,13 +1314,13 @@ public class Main {
 
             boolean encontrada = false;
 
-            System.out.println("\n========== MI HISTORIAL DE COMPRAS ==========");
+            System.out.println("\n---------- MI HISTORIAL DE COMPRAS ----------");
 
             for (int i = 0; i < totalVentas; i++) {
                 if (clienteFactura[i] == idCliente) {
                     System.out.println("--------------------------------");
                     System.out.println("Factura: " + numFacturas[i]);
-                    System.out.println("Codigo del producto: " + productoFactura[i]);
+                    System.out.println("Código del producto: " + productoFactura[i]);
                     System.out.println("Cantidad: " + cantidadFactura[i]);
                     System.out.println("Total: $" + totalFactura[i]);
 
@@ -1330,7 +1329,7 @@ public class Main {
             }
 
             if (!encontrada) {
-                System.out.println("Todavia no tienes compras registradas.");
+                System.out.println("Todavía no tienes compras registradas.");
             }
         }
 
@@ -1435,7 +1434,7 @@ public class Main {
                         break;
 
                     default:
-                        System.out.println("Opción no valida.");
+                        System.out.println("Opción no válida.");
                 }
 
             } while (opcion != 6);
@@ -1450,7 +1449,7 @@ public class Main {
             for (int i = 0; i < totalProductos; i++) {
                 if (stockProductos[i] <= 5) {
                     System.out.println("Producto: " + nomProductos[i]);
-                    System.out.println("Codigo: " + codProductos[i]);
+                    System.out.println("Código: " + codProductos[i]);
                     System.out.println("Unidades restantes: " + stockProductos[i]);
 
                     encontrado = true;
